@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.model.ClassStudent" table="Student_class">
+		<id name="id" type="int" column="Student_Id">
+			<generator class="native"></generator>
+		</id>
+		<property name="firstName" type="string"
+			column="Student_FirstName"></property>
+		<property name="lastName" type="string"
+			column="Student_LastName"></property>
+		<property name="email" type="string" column="Student_Email"></property>
+		<property name="age" type="int" column="Student_Age"></property>
+	</class>
+</hibernate-mapping>
