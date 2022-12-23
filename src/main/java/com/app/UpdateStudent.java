@@ -18,6 +18,8 @@ public class UpdateStudent {
 		ClassStudent student=session.get(ClassStudent.class, 2);
 		student.setEmail("pankajbirajdar@gmail.com");
 		student.setAge(24);
+		
+		session.update(student);
 
 		session.getTransaction().commit();
 		session.close();
